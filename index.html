@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' file:; script-src 'self' file:; form-action 'none'; base-uri 'none'">
+  <title>Senim</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main" data-t="to_content"></a>
+  <header><div class="bar">
+    <span class="brand"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44"><rect width="44" height="44" rx="12" fill="#154748"/><path d="M30 10h-9a8 8 0 0 0-8 8v3h12a5 5 0 0 0 5-5z" fill="#bce0c8"/><path d="M14 34h9a8 8 0 0 0 8-8v-3H19a5 5 0 0 0-5 5z" fill="#fff"/></svg>
+ Senim</span>
+    <div class="lang" aria-label="Русский / Қазақша">
+      <button type="button" lang="ru" data-lang="ru">RU</button>
+      <button type="button" lang="kk" data-lang="kk">ҚАЗ</button>
+    </div>
+  </div></header>
+  <main id="main">
+    <div class="heading"><h1 data-t="headline"></h1><p data-t="lede"></p></div>
+    <div class="workgrid">
+      <div>
+        <section class="panel">
+          <div class="mode-buttons" role="group" aria-labelledby="choose-label">
+            <span class="sr" id="choose-label" data-t="choose"></span>
+            <button type="button" data-mode="text" aria-controls="text-form" data-t="text"></button>
+            <button type="button" data-mode="transfer" aria-controls="form" data-t="transfer"></button>
+          </div>
+          <form class="stack" id="text-form">
+            <label for="message" data-t="input"></label>
+            <textarea id="message" rows="5" maxlength="6000" required aria-describedby="text-hint"></textarea>
+            <small id="text-hint" data-t="text_hint"></small>
+            <button class="primary" data-t="analyze"></button>
+          </form>
+          <form class="stack" id="form" hidden>
+            <div class="pair">
+              <label><span data-t="amount"></span><input id="amount" type="number" min="1" max="1000000000" step="1" inputmode="numeric" required></label>
+              <label><span data-t="usual"></span><input id="usual" type="number" min="1" max="1000000000" step="1" inputmode="numeric"></label>
+            </div>
+            <fieldset><legend data-t="circumstances"></legend><label class="choice"><input type="checkbox" name="urgent"><span data-t="urgent"></span></label>
+<label class="choice"><input type="checkbox" name="secret"><span data-t="secret"></span></label>
+<label class="choice"><input type="checkbox" name="code"><span data-t="code"></span></label>
+<label class="choice"><input type="checkbox" name="remote"><span data-t="remote"></span></label>
+<label class="choice"><input type="checkbox" name="stranger"><span data-t="stranger"></span></label></fieldset>
+            <button class="primary" data-t="assess"></button>
+          </form>
+        </section>
+        <section class="panel" id="output" tabindex="-1" hidden>
+          <div id="report"><p class="kicker" data-t="result"></p>
+            <h2 class="risk" id="level"></h2><p id="reason"></p>
+            <p class="amount-line" id="amount-summary" hidden></p>
+            <ul class="result-list" id="signals"></ul>
+            <div class="advice"><h3 data-t="next"></h3><p id="advice"></p></div>
+            <p class="fine" data-t="limit_note"></p></div>
+          <button type="button" id="export" data-t="download"></button>
+        </section>
+      </div>
+      <aside class="aside">
+        <section><h2 data-t="examples"></h2><div class="examples">
+          <button type="button" id="risky"></button><button type="button" id="plain"></button></div></section>
+        <section><h2 data-t="privacy_title"></h2><p data-t="privacy"></p></section>
+      </aside>
+    </div>
+    <noscript>Включите JavaScript для проверки. Тексеру үшін JavaScript қосыңыз.</noscript>
+  </main>
+  <footer><b>Senim</b><span data-t="independent"></span></footer>
+  <script src="app.js"></script>
+</body></html>
