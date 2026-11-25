@@ -236,7 +236,6 @@ flowchart LR
 
 ## Источники для подготовки README
 
-- **OrgDiff** из спецтрека «Казахтелеком» на HackAlem AI 2026 показывает короткий запуск, тестовый комплект и выход на исходный фрагмент из результата. Для Qalqan это подсказало вынести демонстрацию вперёд и показать цитаты или данные по каждому ключевому признаку. Первое место в спецтреке указано в опубликованном отчёте команды-финалиста. Страница организатора была недоступна из рабочей среды. [Репозиторий OrgDiff](https://github.com/BAITC-Hacks/hack-d68591cd-singularity/tree/bd4fd2fe78bf82802f3245a1e6f1830af74c515f) · [Отчёт участника HackAlem](https://github.com/jandosom/hackalem-ai-mua-analysis)
 - **Figma AI Tickets**, победитель Best Overall, описывает маршрут от входного материала до результата и показывает пример. В Qalqan отдельно описан путь от признака в сообщении до решения в истории. **Aryn**, победитель Best use of AI, разделяет быстрый запуск, самостоятельное размещение и архитектуру. В Qalqan разнесены локальный запуск, автономная копия и проверка публичного релиза. [Итоги организатора Supabase](https://github.com/supabase/supabase/blob/master/apps/www/_blog/2025-08-20-lw15-hackathon-winners.mdx) · [Figma AI Tickets](https://github.com/vickywane/figma-ai-tickets) · [Aryn](https://github.com/adlai88/airena)
 
 ## Проверка и воспроизведение
