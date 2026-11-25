@@ -1,0 +1,13 @@
+# Local standalone copies and release output
+/new[0-9]*.html
+/docs/*.png
+!/docs/release-*.png
+/dist/
+*.zip
+__pycache__/
+
+# Credentials and local data
+.env
+.env.*
+*.sqlite3
+*.pem
