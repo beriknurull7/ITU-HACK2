@@ -4,7 +4,7 @@
 
 Все имена, сообщения, операции и сигналы вымышлены. Деньги не переводятся, обращения никуда не отправляются, банк не подключён. Прототип рассчитан на показ в одной вкладке.
 
-## Evaluator quick start
+## Quick start for evaluators
 
 Qalqan is a browser MVP for the Bank CenterCredit fintech case. It helps a customer recognize a suspicious request before a simulated transfer, then connects the customer’s report and the analyst’s decision through the same case.
 
